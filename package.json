@@ -1,0 +1,26 @@
+{
+  "name": "eve-police-blotter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm run lint",
+    "clear": "node scripts/clearConsole.js",
+    "lint": "eslint ./index.js src scripts test",
+    "watch": "watch \"npm run watch:runner\" src test",
+    "watch:runner": "npm run clear && npm run test"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "log": "^1.4.0",
+    "node-fetch": "^1.7.3",
+    "zeromq": "^4.6.0"
+  },
+  "devDependencies": {
+    "cli-clear": "^1.0.4",
+    "eslint": "^4.7.2",
+    "watch": "^1.0.2"
+  }
+}
